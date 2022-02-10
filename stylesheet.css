@@ -1,0 +1,273 @@
+*{
+    margin:0;
+    padding:0;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+nav{
+    height: 100px;
+    width: 100%;
+    background-color: #181818;
+    display: block;
+    text-align: center;
+    position:fixed;
+    z-index: 2;
+}
+nav p{
+    color: white;
+    font-family:tahoma;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    padding-top: 20px;
+}
+nav ul{
+    display: block;
+    padding-top: 20px;
+}
+nav ul li{
+    display: inline-block;
+    position: relative;
+}
+nav ul li a{
+    color: white;
+    font-family: arial;
+    font-size: 15px;
+    padding:0px 50px;
+    transition: 0.5s;
+}
+nav ul li a:hover{
+    color:skyblue;
+}
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding:10px;
+    line-height: 25px;
+    border-radius: 10px;
+}
+nav ul li:hover ul{
+    display: block;
+}
+nav ul li ul li a{
+    color:black;
+    font-size: 10px;
+}
+nav ul li ul li a:hover{
+    
+    background-color: rgb(78, 74, 74);
+    color: white;
+}
+
+
+@media only screen and (min-width:1115px){
+    nav{
+        display: inline-block;
+        line-height: 50px;
+    }
+    nav p{
+        float:left;
+        padding-left:10%;
+        font-size: 30px;
+    }
+    nav ul{
+        display: block;
+        padding-left: 60%;
+        
+    }
+    nav ul li a{
+        padding: 0 30px;
+        font-size: 20px;
+        display: inline-block;
+    }
+    nav ul li ul{
+        display: none;
+        position: absolute;
+        background-color: white;
+        padding:10px;
+        line-height: 40px;
+        border-radius: 10px;
+    }
+    nav ul li:hover ul{
+        display: block;
+    }
+    nav ul li ul li a{
+        color:black;
+        font-size: 15px;
+    }
+    nav ul li ul li a:hover{
+
+        background-color: rgb(78, 74, 74);
+        color: white;
+    }
+    
+}
+main{
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.banner{
+    height: 400px;
+    width: 100%;
+    background-image: url(img/spiderman.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.banner p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    color:white;
+    letter-spacing: 1px;
+    padding-top: 100px;
+    text-shadow:0 0 30px black;
+}
+.content{
+    height:400px;
+    width: 100%;
+    background-color: #181818;
+    color: white;
+    text-align: center;
+}
+.content h2 {
+	font: 400 3.5em/125% 'Alex Brush', Helvetica, Sans-serif;
+	color: white;
+    font-size: 40px;
+    padding-top: 50px;
+}
+
+.content h4{
+    font: 400 3.5em/125% 'Walter Turncoat', Helvetica, Sans-serif;
+    font-size: 20px;
+    padding: 20px;
+}
+.upbox{
+    height: 30px;
+    width:30px;
+    background-color:#000000bf;
+    text-align: center;
+    position: sticky;
+    line-height: 30px;
+    top:90%;
+    left:90%;
+    border-radius: 10px;
+}
+.upbox a{
+    color: white;
+}
+.map{
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+}
+.handles{
+    height: 100px;
+    width: 100%;
+    background-color: white;
+    word-spacing: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.handles p{
+    padding-top:10px ;
+    font-family:Impact;
+    font-size:12px;
+    word-spacing:2px;
+}
+#icons{
+    padding-top: 25px;
+	color:#181818;
+	transition:0.3s;
+}
+#icons:hover{
+	transform:scale(1.1,1.1);
+	text-shadow:0px 0px 50px #181818 ;
+}
+
+@media only screen and (min-width:1115px){
+    .banner p{
+        font-size: 70px
+    }
+    .upbox{
+        display:none;
+    }
+    .handles{
+        display: inline-block;
+        font-size: 50px;
+        word-spacing: 40px;
+        line-height: 100px;
+    }
+    .handles ul{
+        padding-left: 18%;
+        float: left;
+    }
+    .handles p{
+        padding-top: 0px;
+        padding-left:60%;
+        font-size: 30px;
+    }
+    #icons{
+        padding-top: 0px;
+    }
+    .content{
+        font-size: 30px;
+    }
+    .content h2 {
+        font-size: 60px;
+    }
+    .content h4{
+        font-size: 25px;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 30px;
+    background-color: #181818;
+    color: skyblue;
+    font-family: limelight,cursive;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+}
+
+/*gallery*/
+
+section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:baseline;
+}
+.imgs{
+    margin:5px;
+    flex-basis: 100px;
+}
+.imgs img{
+    width: 100%;
+}
+@media only screen and (min-width:762px){
+    .imgs{
+        flex-basis:300px;
+        margin: 10px;
+    }
+}
+
+/*notfoundpage*/
+
+.divbox{
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    font-family: tahoma;
+    font-weight: bold;
+    font-size: 40px;
+}
+.divbox h1{
+    padding-top:200px;
+}
